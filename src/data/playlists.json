@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "Main Lobby",
+        "tags": [
+            "Flash Sale",
+            "Landscape",
+            "HD"
+        ],
+        "image": "https://picsum.photos/200",
+        "nowPlaying": "Summer Promo - 2025",
+        "playingType": "video",
+        "status": "live"
+    },
+    {
+        "id": 2,
+        "name": "Reception Area",
+        "tags": [
+            "Seasonal Offer",
+            "Promotion"
+        ],
+        "image": "https://picsum.photos/201",
+        "nowPlaying": "Splash",
+        "playingType": "link",
+        "status": "offline"
+    }
+]
