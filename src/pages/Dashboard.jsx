@@ -28,16 +28,13 @@ function Dashboard() {
                     setActiveTab={setActiveTab}
                     counts={counts}
                 />
+                <div className="flex flex-col gap-4">
+                    {data[activeTab].map((item) => (
+                        <ScreenCard key={item.id} item={item} />
+                    ))}
+
+                </div>
             </div>
-
-            <div className="flex flex-col gap-4">
-                {data[activeTab].map((item) => (
-                   <ScreenCard key={item.id} item={item} />
-                ))}
-
-            </div>
-
-
         </div>
     )
 }
