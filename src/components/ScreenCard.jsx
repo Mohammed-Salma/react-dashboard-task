@@ -1,5 +1,7 @@
 import { Video, Link, Maximize, ListVideo } from "lucide-react";
 
+import StatusDropdown from "./StatusDropdown";
+
 function getIcon(playingType, nowPlaying) {
     if (nowPlaying.includes("Splash")) return <Maximize size={18} />;
     if (nowPlaying.includes("Employee")) return <ListVideo size={18} />;
@@ -43,7 +45,7 @@ function ScreenCard({ item }) {
                 </div>
             </div>
             <div className="flex-[0.3] flex justify-end">
-                Live
+                <StatusDropdown status={item.status} />
             </div>
         </div>
     )
