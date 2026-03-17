@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Tabs from "../components/Tabs";
+import ScreenCard from "../components/ScreenCard";
 
 import screens from "../data/screens.json";
 import schedules from "../data/schedules.json";
@@ -22,8 +23,21 @@ function Dashboard() {
     return (
         <div className="p-8 bg-[#f8f9fa] min-h-screen text-gray-800">
             <div className="max-w-[1000px] mx-auto">
-                <Tabs activeTab={activeTab} setActiveTab={setActiveTab} counts={counts} />
+                <Tabs
+                    activeTab={activeTab}
+                    setActiveTab={setActiveTab}
+                    counts={counts}
+                />
             </div>
+
+            <div className="flex flex-col gap-4">
+                {data[activeTab].map((item) => (
+                   <ScreenCard key={item.id} item={item} />
+                ))}
+
+            </div>
+
+
         </div>
     )
 }
