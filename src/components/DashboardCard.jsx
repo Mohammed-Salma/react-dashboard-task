@@ -16,7 +16,7 @@ function DashboardCard({ item }) {
             <div className="col-span-5">
                 <h3 className="text-lg font-bold text-gray-800">{item.name}</h3>
                 <div className="flex gap-2 mt-3 flex-wrap items-center">
-                    {item.tags.map((tag, index) => (
+                    {item.tags.slice(0, 3).map((tag, index) => (
                         <span
                             key={index}
                             className="bg-gray-100 text-gray-500 text-[13px] font-bold px-3 py-1.5 rounded-lg flex items-center gap-1.5"
@@ -24,6 +24,11 @@ function DashboardCard({ item }) {
                             {tag} 
                         </span>
                     ))}
+                    {item.tags.length > 3 && (
+                        <span className="bg-gray-100 text-gray-500 text-[13px] font-bold px-3 py-1.5 rounded-lg flex items-center gap-1.5">
+                            +{item.tags.length - 3}
+                        </span>
+                    )}
                 </div>
             </div>
             <div className="col-span-5 flex gap-5 items-center">

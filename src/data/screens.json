@@ -31,7 +31,10 @@
             "Touchscreen",
             "Interactive",
             "Upsell",
-            "+7"
+            "anything",
+            "more",
+            "something",
+            "else"
         ],
         "image": "https://picsum.photos/400/202",
         "nowPlaying": "Employee Announcements",
@@ -42,6 +45,14 @@
         "id": 4,
         "name": "Training Center",
         "tags": [
+            "Landscape",
+            "Stats",
+            "Landscape",
+            "Stats",
+            "Landscape",
+            "Stats",
+            "Landscape",
+            "Stats",
             "Landscape",
             "Stats"
         ],
