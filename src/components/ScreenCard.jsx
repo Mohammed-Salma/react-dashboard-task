@@ -21,7 +21,7 @@ function ScreenCard({ item }) {
                             key={index}
                             className="bg-gray-100 text-gray-500 text-[13px] font-bold px-3 py-1.5 rounded-lg flex items-center gap-1.5"
                         >
-                            {tag}
+                            {tag} 
                         </span>
                     ))}
                 </div>

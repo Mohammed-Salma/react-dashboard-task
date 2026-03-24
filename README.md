@@ -9,7 +9,7 @@ lucide-react (icons)
 Link : https://github.com/Mohammed-Salma/react-dashboard-task
 
 How to Run :
-npm install
+`npm install`
 npm run dev
 
 
