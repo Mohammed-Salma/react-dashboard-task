@@ -22,7 +22,7 @@ function Dashboard() {
 
     return (
         <div className="p-8 bg-[#f8f9fa] min-h-screen text-gray-800">
-            <div className="max-w-[1000px] mx-auto">
+            <div className="w-full">
                 <Tabs
                     activeTab={activeTab}
                     setActiveTab={setActiveTab}
