@@ -12,8 +12,8 @@ function getIcon(playingType, nowPlaying) {
 
 function DashboardCard({ item }) {
     return (
-        <div className="bg-white rounded-[1.5rem] p-5 flex justify-between items-center border border-gray-200 shadow-sm">
-            <div className="flex-[1.5]">
+        <div className="bg-white rounded-[1.5rem] p-5 grid grid-cols-12 gap-4 items-center border border-gray-200 shadow-sm">
+            <div className="col-span-5">
                 <h3 className="text-lg font-bold text-gray-800">{item.name}</h3>
                 <div className="flex gap-2 mt-3 flex-wrap items-center">
                     {item.tags.map((tag, index) => (
@@ -26,7 +26,7 @@ function DashboardCard({ item }) {
                     ))}
                 </div>
             </div>
-            <div className="flex-[1.5] flex gap-5 items-center">
+            <div className="col-span-5 flex gap-5 items-center">
                 <div className="w-[120px] shrink-0 h-[68px] rounded-lg border-[1.5px] border-slate-900 overflow-hidden shadow-sm">
                     <img
                         src={item.image}
@@ -44,7 +44,7 @@ function DashboardCard({ item }) {
                     </div>
                 </div>
             </div>
-            <div className="flex-[0.3] flex justify-end">
+            <div className="col-span-2 flex justify-end">
                 <StatusDropdown status={item.status} />
             </div>
         </div>
