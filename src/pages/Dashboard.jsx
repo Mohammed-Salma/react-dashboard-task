@@ -22,7 +22,7 @@ function Dashboard() {
 
     return (
         <div className="p-8 bg-[#f8f9fa] min-h-screen text-gray-800">
-            <div className="w-full">
+            <div className="w-full flex flex-col gap-6">
                 <Tabs
                     activeTab={activeTab}
                     setActiveTab={setActiveTab}

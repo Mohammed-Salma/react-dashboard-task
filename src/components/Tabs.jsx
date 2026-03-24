@@ -12,7 +12,7 @@ function Tabs({ counts, activeTab, setActiveTab }) {
 
     return (
 
-        <div className="flex justify-between items-center bg-white border border-gray-200 shadow-sm p-3 rounded-2xl mb-6">
+        <div className="flex justify-between items-center bg-white border border-gray-200 shadow-sm p-3 rounded-2xl">
             <div className="flex gap-2">
                 {tabs.map((tab) => (
                     <button
