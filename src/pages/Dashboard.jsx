@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Tabs from "../components/Tabs";
-import ScreenCard from "../components/ScreenCard";
+import DashboardCard from "../components/DashboardCard";
 
 import screens from "../data/screens.json";
 import schedules from "../data/schedules.json";
@@ -30,7 +30,7 @@ function Dashboard() {
                 />
                 <div className="flex flex-col gap-4">
                     {data[activeTab].map((item) => (
-                        <ScreenCard key={item.id} item={item} />
+                        <DashboardCard key={item.id} item={item} />
                     ))}
 
                 </div>

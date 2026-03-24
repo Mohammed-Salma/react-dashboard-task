@@ -10,7 +10,7 @@ function getIcon(playingType, nowPlaying) {
 }
 
 
-function ScreenCard({ item }) {
+function DashboardCard({ item }) {
     return (
         <div className="bg-white rounded-[1.5rem] p-5 flex justify-between items-center border border-gray-200 shadow-sm">
             <div className="flex-[1.5]">
@@ -51,4 +51,4 @@ function ScreenCard({ item }) {
     )
 }
 
-export default ScreenCard
+export default DashboardCard
